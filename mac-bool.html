@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind Link -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Mack-Book-Pro</title>
+    <link rel="shortcut icon" type="image" href="images/mac.png" />
+  </head>
+  <body>
+    <section class="grid grid-cols-2 gap-4 my-10 mx-4">
+      <div>
+        <img src="images/mac.png" alt="" />
+      </div>
+      <div>
+        <header>
+          <h1 class="text-4xl font-mono font-bold">
+            Customize your Blue 24-inch iMac whit Apple M1 chip.
+          </h1>
+
+          <p class="2xl text-gray-400">
+            Apple M1 chip whit 8-core CPU whit 4 performsnce cores and 4
+            efficiency cores, 7-core GPU,and 16-core Neural Engine 8GB unified
+            memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
+            Magic Keyboard - US English
+          </p>
+        </header>
+
+        <!-- Mac Configuration -->
+        <h1 class="text-4xl font-bold mt-10">Memory</h1>
+        <button type="button" id="8GB_M" class="btn btn-outline-secondary">
+          8GB unified memory
+        </button>
+        <button type="button" id="16GB_M" class="btn btn-outline-secondary">
+          16GB unified memory
+        </button>
+
+        <h1 class="text-4xl font-bold mt-10">Storage</h1>
+        <button type="button" id="256GB_SSD" class="btn btn-outline-secondary">
+          256GB SSD storage
+        </button>
+        <button type="button" id="512GB_SSD" class="btn btn-outline-secondary">
+          512GB SSD storage
+        </button>
+        <button type="button" id="1TB_SSD" class="btn btn-outline-secondary">
+          1TB SSD storage
+        </button>
+
+        <h1 class="text-4xl font-bold mt-10">Choose your delivery option</h1>
+        <button
+          type="button"
+          id="DFreeCharge"
+          class="btn btn-outline-secondary"
+        >
+          Friday,Aug 25 FREE Prime delivery
+        </button>
+        <button type="button" id="Dcharge" class="btn btn-outline-secondary">
+          Friday,Aug 21 delivery charge $20
+        </button>
+
+        <!-- Payment Calculation -->
+        <div class="mt-40">
+          <div class="d-flex justify-content-between">
+            <h3 class="text-3xl font-bold">Best Price</h3>
+            <p class="text-3xl">$1299</p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <h3 class="text-3xl font-bold">Extra Memory Cost</h3>
+            <p class="text-3xl">$ <span id="memoryCost">0</span></p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <h3 class="text-3xl font-bold">Extra Storage Cost</h3>
+            <p class="text-3xl">$ <span id="storageCost">0</span></p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <h3 class="text-3xl font-bold">Delivery charge</h3>
+            <p class="text-3xl">$ <span id="dCharge">0</span></p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <h3 class="text-3xl font-bold">Total Price</h3>
+            <p class="text-3xl">$ <span id="tPrice">0</span></p>
+          </div>
+        </div>
+
+        <h1 class="text-3xl font-mono font-bold mt-5">Add Promo Code</h1>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="cuponInput"
+            placeholder="Apply Promo code"
+          />
+          <button class="btn btn-success" type="button" id="cuponButton">
+            Apply
+          </button>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <h1 class="text-4xl font-bold flex justify-center">
+        Total: $<span id="fOOterTprice">0</span>
+      </h1>
+    </footer>
+
+    <!-- Bootstrap & Js File -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js_File/mac-functionality.js"></script>
+  </body>
+</html>
